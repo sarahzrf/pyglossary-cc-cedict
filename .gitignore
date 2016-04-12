@@ -3,4 +3,5 @@ __pycache__
 *.pyc
 venv
 pyglossary_git
+jinja2htmlcompress.py
 

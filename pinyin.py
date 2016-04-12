@@ -1,5 +1,6 @@
 # coding=utf-8
 # based on https://github.com/zkoch/CEDICT_Parser
+from __future__ import unicode_literals
 
 TONES = { "a1":"ā", "a2":"á", "a3":"ǎ", "a4":"à",
           "e1":"ē", "e2":"é", "e3":"ě", "e4":"è",
@@ -15,9 +16,9 @@ def convert(word):
     result = pinyin
 
     if tone == "5":
-        return pinyin
+        return pinyin, tone
     elif tone not in "1234":
-        return word
+        return word, ""
 
     for vowel in "a e ou io iu ui uo i o v u".split():
         if pinyin.find(vowel) > -1:
@@ -25,5 +26,5 @@ def convert(word):
             result = pinyin.replace(vowel1, TONES[vowel1+tone])
             break
 
-    return result
+    return result, tone
 
