@@ -20,7 +20,7 @@ def convert(word):
     elif tone not in "1234":
         return word, ""
 
-    for vowel in "a e ou io iu ui uo i o v u".split():
+    for vowel in "a e o iu ui i u v".split():
         if pinyin.find(vowel) > -1:
             vowel1 = vowel[-1]
             result = pinyin.replace(vowel1, TONES[vowel1+tone])
