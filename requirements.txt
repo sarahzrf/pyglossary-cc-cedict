@@ -1,0 +1,3 @@
+Jinja2==2.8
+-e git://github.com/ilius/pyglossary.git@2016.03.18#egg=pyglossary
+
