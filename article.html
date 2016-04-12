@@ -8,8 +8,10 @@
 <div style="border: 1px solid; padding: 5px">
     <div>
         <big>{{colorize(simp, tones)}}</big>
+	{% if trad != simp %}
         &nbsp;/&nbsp;
         {{colorize(trad, tones)}}
+	{% endif %}
         <br>
         <big>{{colorize(pinyin, tones)}}</big>
     </div>
