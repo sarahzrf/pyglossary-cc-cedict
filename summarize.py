@@ -9,7 +9,9 @@ def summarize(phrase):
     phrase = parenthetical.sub('', phrase)
     phrase = phrase.translate(punct_table)
     words = phrase.split()
-    words = [word for word in words if word not in stops]
-    summary = ' '.join(words[:10])
+    relevant_words = [word for word in words if word not in stops]
+    if not relevant_words:
+        relevant_words = words
+    summary = ' '.join(relevant_words[:10])
     return summary
 
