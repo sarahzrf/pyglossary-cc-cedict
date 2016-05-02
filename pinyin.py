@@ -1,6 +1,5 @@
 # coding=utf-8
 # based on https://github.com/zkoch/CEDICT_Parser
-from __future__ import unicode_literals
 
 TONES = { "a1":"ā", "a2":"á", "a3":"ǎ", "a4":"à",
           "e1":"ē", "e2":"é", "e3":"ě", "e4":"è",

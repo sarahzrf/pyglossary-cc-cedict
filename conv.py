@@ -1,4 +1,3 @@
-from __future__ import unicode_literals, print_function
 import re
 import os
 import sys
@@ -30,9 +29,7 @@ def make_entry(trad, simp, pinyin, eng):
     names = [simp, trad, pinyin] + eng_names
     article = render_article(trad, simp, pinyin, eng)
 
-    names = [name.encode('utf-8') for name in names]
-    article = article.encode('utf-8')
-    entry = pyglossary.entry.Entry(names, article, defiFormat=b'h')
+    entry = pyglossary.entry.Entry(names, article, defiFormat='h')
     return entry
 
 script_dir = os.path.dirname(__file__)
@@ -57,7 +54,6 @@ def render_article(trad, simp, pinyin, eng):
 glossary = pyglossary.glossary.Glossary()
 with open(sys.argv[1], 'r') as f:
     for line in f:
-        line = line.decode('utf-8')
         if not line.startswith('#'):
             entry = make_entry(*parse_line(line))
             glossary.addEntryObj(entry)
