@@ -1,7 +1,6 @@
 # Overview
 
-Convert CC-CEDICT into a pleasantly-formatted dictionary (no longer hardcoded
-to output GoldenDict!)
+Convert CC-CEDICT into a pleasantly-formatted dictionary!
 
 # Dependencies
 
@@ -14,7 +13,10 @@ to output GoldenDict!)
 
 This is a PyGlossary plugin. To use it, simply clone this repository as a
 subdirectory of the PyGlossary plugins directory and use PyGlossary normally
-with this plugin and an (unzipped) copy of CC-CEDICT as the input.
+with this plugin and an (unzipped) copy of CC-CEDICT as the input. You can find
+the plugins directory at `~/.pyglossary/plugins/` on Unices,
+`~/Library/Preferences/PyGlossary/plugins/` on macOS, and
+`%APPDATA%\PyGlossary\plugins\` on Windows.
 
 For StarDict/GoldenDict, at least, compressing the output dictionary seems to
 take a long time, so be patient—PyGlossary hasn't crashed. It may take up to 10
