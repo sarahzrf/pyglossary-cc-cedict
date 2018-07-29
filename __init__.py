@@ -42,6 +42,5 @@ class Reader:
                 if self.entries_left > 0:
                     self.entries_left -= 1
                 names, article = conv.make_entry(*conv.parse_line(line))
-                entry = formats_common.Entry(names, article, defiFormat='h')
+                entry = self.glos.newEntry(names, article, defiFormat='h')
                 yield entry
-
