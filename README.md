@@ -23,3 +23,8 @@ take a long time, so be patient—PyGlossary hasn't crashed. It may take up to 1
 minutes—I don't know whether my case is representative. This is probably an
 issue with something in the output logic, not with this plugin.
 
+# License
+
+`jinja2htmlcompress.py` is subject to the license in `LICENSE2` (BSD 3-clause).
+Everything else is subject to the license in `LICENSE` (GPLv3).
+

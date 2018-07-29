@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # copied from https://github.com/mitsuhiko/jinja2-htmlcompress
+# see LICENSE2 for license information
 """
     jinja2htmlcompress
     ~~~~~~~~~~~~~~~~~~
