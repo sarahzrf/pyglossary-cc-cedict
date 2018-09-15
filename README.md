@@ -2,12 +2,16 @@
 
 Convert CC-CEDICT into a pleasantly-formatted dictionary!
 
+This has now been merged into [PyGlossary], so this repo no longer relevant.
+
 # Dependencies
 
 - Python 3
 - Jinja2 (installed as a Python 3 library)
-- [PyGlossary](https://github.com/ilius/pyglossary)
+- [PyGlossary]
 - Optionally, `dictzip` (might be part of `dictd` on your OS)
+
+[PyGlossary]: https://github.com/ilius/pyglossary
 
 # Usage
 
